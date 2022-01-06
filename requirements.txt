@@ -1,2 +1,2 @@
-sklearn==0.24.0
+sklearn
 xgboost
