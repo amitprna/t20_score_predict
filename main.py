@@ -2,6 +2,18 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import requests
+from streamlit_lottie import st_lottie
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+url = "https://assets2.lottiefiles.com/private_files/lf30_gpi1jcpe.json"
+res_json = load_lottieurl(url)
+st_lottie(res_json)
 
 st.title('T20 Score Predictor')
 
