@@ -23,7 +23,7 @@ city = st.selectbox('Select city',sorted(cities))
 col3,col4 = st.columns(2)
 
 with col3:
-    current_score = st.number_input('Current Score',key=int)
+    current_score = st.number_input('Current Score',max_value=200,key=int)
 with col4:
     wickets = st.number_input('Wickets Fallen',max_value=10,key=int)
     
