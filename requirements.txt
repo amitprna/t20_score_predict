@@ -1,2 +1,2 @@
 sklearn
-xgboost
+xgboost==1.4.2
