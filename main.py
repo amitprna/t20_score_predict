@@ -23,11 +23,11 @@ city = st.selectbox('Select city',sorted(cities))
 col3,col4 = st.columns(2)
 
 with col3:
-    current_score = st.number_input('Current Score')
+    current_score = st.number_input('Current Score',key=int)
 with col4:
-    wickets = st.number_input('Wickets Fallen')
+    wickets = st.number_input('Wickets Fallen',max_value=10,key=int)
     
-overs = st.slider ('Running Over',min_value=5,max_value=20,)
+overs = st.slider ('Running Over',min_value=5,max_value=20)
 
 if st.button('Predict Score'):
     balls_thrown = (overs*6)
