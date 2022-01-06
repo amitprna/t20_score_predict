@@ -1,2 +1,3 @@
 sklearn
 xgboost
+streamlit_lottie
