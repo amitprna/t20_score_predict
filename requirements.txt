@@ -1,3 +1,4 @@
+streamlit==1.4.0
 sklearn
 xgboost
 streamlit_lottie
